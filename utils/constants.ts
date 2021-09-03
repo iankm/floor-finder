@@ -3,7 +3,7 @@ export const defaultTables = [
   {
     id: 1,
     attributes: [
-      'Shrimp',
+      'Topaz',
       'Crackers',
       'Beer',
       'Miso Soup',
