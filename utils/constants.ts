@@ -1,5 +1,5 @@
 // Export selected default bags
-export const defaultMeals = [
+export const defaultTables = [
   {
     id: 1,
     attributes: [

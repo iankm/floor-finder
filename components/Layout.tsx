@@ -39,7 +39,7 @@ function Head(): ReactElement {
       <meta name='title' content='Enchants' />
       <meta
         name='description'
-        content='Enchants is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized Enchants for adventurers generated
         and stored on chain.'
       />
 
@@ -49,7 +49,7 @@ function Head(): ReactElement {
       <meta property='og:title' content='Enchants' />
       <meta
         property='og:description'
-        content='Enchants is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized Enchants for adventurers generated
         and stored on chain.'
       />
       <meta
@@ -63,7 +63,7 @@ function Head(): ReactElement {
       <meta property='twitter:title' content='Enchants' />
       <meta
         property='twitter:description'
-        content='Enchants is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized Enchants for adventurers generated
         and stored on chain.'
       />
       <meta

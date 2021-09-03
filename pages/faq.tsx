@@ -17,9 +17,9 @@ export default function FAQ(): ReactElement {
         <div className={styles.faq__item}>
           <h3>What is Enchants?</h3>
           <p>
-            Enchants is a derivative collection of 8,000 unique meals comprised
-            of adventurer Enchants, based on the original Loot release released
-            by{' '}
+            Enchants is a derivative collection of 8,000 unique Enchants
+            comprised of adventurer Enchants, based on the original Loot release
+            released by{' '}
             <a
               href='https://twitter.com/dhof/status/1431316631934967815'
               target='_blank'
@@ -27,15 +27,15 @@ export default function FAQ(): ReactElement {
             >
               Dom Hofmann
             </a>
-            . At release, anyone could claim meals for just gas, and all meals
-            were claimed in under 4 hours. Each loot meal contains 8 items: a
-            piece for an adventurer&apos;s chest, foot, hand, head, neck, ring,
-            waist, and weapon.
+            . At release, anyone could claim Enchants for just gas, and all
+            Enchants were claimed in under 4 hours. Each loot meal contains 8
+            items: a piece for an adventurer&apos;s chest, foot, hand, head,
+            neck, ring, waist, and weapon.
           </p>
           <p>
-            Enchants is an unaudited project. Meals #1 to #7777 were claimable
-            by anyone and #7778 to #8000 are currently reserved for the contract
-            deployer.
+            Enchants is an unaudited project. Enchants #1 to #7777 were
+            claimable by anyone and #7778 to #8000 are currently reserved for
+            the contract deployer.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function FAQ(): ReactElement {
 
         {/* How do I value loot bags? */}
         <div className={styles.faq__item}>
-          <h3>How do I value meals?</h3>
+          <h3>How do I value Enchants?</h3>
           <p>
             They say that value is always in the eye of the beholder. Loot is no
             different, with no explicit rarities specified at launch. How you
@@ -90,7 +90,7 @@ export default function FAQ(): ReactElement {
           </p>
           <p>
             Still, the community has begun to devise many mechanisms by which to
-            assess the rarity of meals and their items. Some of these include{' '}
+            assess the rarity of Enchants and their items. Some of these include{' '}
             <a
               href='https://github.com/Anish-Agnihotri/dhof-loot/blob/master/output/rare.json'
               target='_blank'

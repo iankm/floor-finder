@@ -1,6 +1,6 @@
 // Imports
 import Layout from '@components/Layout'; // Layout wrapper
-import { defaultMeals } from '@utils/constants'; // Bags to render
+import { defaultTables } from '@utils/constants'; // Bags to render
 import styles from '@styles/pages/Home.module.scss'; // Styles
 
 // Types
@@ -26,8 +26,8 @@ export default function Home(): ReactElement {
    * Selects 3 random bags from defaultBags
    * @returns {Record<string, string>[]} randomized bags
    */
-  const getRandomThreeMeals = () => {
-    const shuffled = defaultMeals.sort(() => 0.5 - Math.random());
+  const getRandomThreeTables = () => {
+    const shuffled = defaultTables.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 3);
   };
 
@@ -64,8 +64,8 @@ export default function Home(): ReactElement {
 
         {/* Rendering sample loot bags */}
         <div className={styles.home__feature}>
-          <span>Example Meals</span>
-          {getRandomThreeMeals().map(({ id, attributes }, i) => (
+          <span>Example Tables</span>
+          {getRandomThreeTables().map(({ id, attributes }, i) => (
             // For each loot bag, render item and link to OpenSea
             // DAWEI: CHANGE THIS CONTRACT ADDRESS LINK
             <a

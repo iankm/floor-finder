@@ -180,7 +180,7 @@ export const derivativesList: Record<string, string>[] = [
   },
   {
     name: 'Banquets',
-    description: 'Randomized adventurer meals',
+    description: 'Randomized adventurer Enchants',
     url: 'https://etherscan.io/address/0x615a610649e656485d9baf0ebe525496d7b78e24',
   },
   {
