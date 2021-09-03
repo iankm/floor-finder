@@ -56,8 +56,7 @@ export default function Home(): ReactElement {
             Enchants is a collection of randomized tomes for adventurers
             generated and stored on chain.
             <br /> Stats, images, and other functionality are intentionally
-            omitted for others to interpret.
-            <br />
+            omitted for others to interpret. <br />
             Part of the Loot Project Metaverse.
           </p>
         </div>
