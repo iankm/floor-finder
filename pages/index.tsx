@@ -10,7 +10,7 @@ export default function Home(): ReactElement {
   // Quicklinks to render
   const quicklinks: Record<string, string>[] = [
     { name: 'OpenSea', url: 'https://opensea.io/collection/foodproject' },
-    { name: 'Discord', url: 'https://discord.gg/xGe6tFce' },
+    { name: 'Discord', url: 'https://discord.gg/3v2apT3YWn' },
     {
       name: 'Twitter',
       url: 'https://twitter.com/lootfoodproject',
@@ -20,6 +20,7 @@ export default function Home(): ReactElement {
       url: 'https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7',
     },
   ];
+  // DAWEI: YOU NEED TO CHANGE THE CONTRACT ADDRESS HERE ^ AND FURTHER BELOW  v
 
   /**
    * Selects 3 random bags from defaultBags
@@ -66,6 +67,7 @@ export default function Home(): ReactElement {
           <span>Example Meals</span>
           {getRandomThreeMeals().map(({ id, attributes }, i) => (
             // For each loot bag, render item and link to OpenSea
+            // DAWEI: CHANGE THIS CONTRACT ADDRESS LINK
             <a
               href={`https://opensea.io/assets/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7/${id}`}
               target='_blank'

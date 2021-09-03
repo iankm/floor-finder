@@ -224,7 +224,7 @@ export const derivativesList: Record<string, string>[] = [
     url: 'https://etherscan.io/address/0x70F11Bc4d6C07C821b20bbE1872c35aB57F0a112#writeContract',
   },
   {
-    name: 'Poorly Drawn Food',
+    name: 'Poorly Drawn Loot',
     description: 'Experimental, poorly drawn bags',
     url: 'https://opensea.io/activity/loot-poorly-drawn',
   },
