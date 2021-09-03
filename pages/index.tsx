@@ -17,7 +17,7 @@ export default function Home(): ReactElement {
     },
     {
       name: 'Contract',
-      url: 'https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7',
+      url: 'https://etherscan.io/address/0x17a8CBBD824738f2F3e5bc329385A97B7F3BFa1f',
     },
   ];
   // DAWEI: YOU NEED TO CHANGE THE CONTRACT ADDRESS HERE ^ AND FURTHER BELOW  v
@@ -69,7 +69,7 @@ export default function Home(): ReactElement {
             // For each loot bag, render item and link to OpenSea
             // DAWEI: CHANGE THIS CONTRACT ADDRESS LINK
             <a
-              href={`https://opensea.io/assets/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7/${id}`}
+              href={`https://opensea.io/assets/0x17a8CBBD824738f2F3e5bc329385A97B7F3BFa1f/${id}`}
               target='_blank'
               rel='noopener noreferrer'
               key={i}
