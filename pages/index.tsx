@@ -1,23 +1,23 @@
 // Imports
-import Layout from "@components/Layout"; // Layout wrapper
-import { defaultBags } from "@utils/constants"; // Bags to render
-import styles from "@styles/pages/Home.module.scss"; // Styles
+import Layout from '@components/Layout'; // Layout wrapper
+import { defaultMeals } from '@utils/constants'; // Bags to render
+import styles from '@styles/pages/Home.module.scss'; // Styles
 
 // Types
-import type { ReactElement } from "react";
+import type { ReactElement } from 'react';
 
 export default function Home(): ReactElement {
   // Quicklinks to render
   const quicklinks: Record<string, string>[] = [
-    { name: "OpenSea", url: "https://opensea.io/collection/lootproject" },
-    { name: "Discord", url: "https://discord.gg/NXEntTSHgy" },
+    { name: 'OpenSea', url: 'https://opensea.io/collection/foodproject' },
+    { name: 'Discord', url: 'https://discord.gg/xGe6tFce' },
     {
-      name: "Twitter",
-      url: "https://twitter.com/lootproject",
+      name: 'Twitter',
+      url: 'https://twitter.com/lootfoodproject',
     },
     {
-      name: "Contract",
-      url: "https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7",
+      name: 'Contract',
+      url: 'https://etherscan.io/address/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7',
     },
   ];
 
@@ -25,8 +25,8 @@ export default function Home(): ReactElement {
    * Selects 3 random bags from defaultBags
    * @returns {Record<string, string>[]} randomized bags
    */
-  const getRandomThreeBags = () => {
-    const shuffled = defaultBags.sort(() => 0.5 - Math.random());
+  const getRandomThreeMeals = () => {
+    const shuffled = defaultMeals.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 3);
   };
 
@@ -35,14 +35,14 @@ export default function Home(): ReactElement {
       <div>
         <div className={styles.home__cta}>
           {/* CTA title */}
-          <h1>Loot</h1>
+          <h1>Food</h1>
 
           {/* Quicklinks */}
           <ul>
             {quicklinks.map(({ name, url }, i) => {
               return (
                 <li key={i}>
-                  <a href={url} target="_blank" rel="noopener noreferrer">
+                  <a href={url} target='_blank' rel='noopener noreferrer'>
                     {name}
                   </a>
                 </li>
@@ -52,22 +52,24 @@ export default function Home(): ReactElement {
 
           {/* CTA Description */}
           <p>
-            Loot is randomized adventurer gear generated and stored on chain.
+            Food is a collection of randomized meals for adventurers generated
+            and stored on chain.
             <br /> Stats, images, and other functionality are intentionally
-            omitted for others to interpret. <br /> Feel free to use Loot in any
-            way you want.
+            omitted for others to interpret.
+            <br />
+            Part of the Loot Metaverse.
           </p>
         </div>
 
         {/* Rendering sample loot bags */}
         <div className={styles.home__feature}>
-          <span>Example Bags:</span>
-          {getRandomThreeBags().map(({ id, attributes }, i) => (
+          <span>Example Meals</span>
+          {getRandomThreeMeals().map(({ id, attributes }, i) => (
             // For each loot bag, render item and link to OpenSea
             <a
               href={`https://opensea.io/assets/0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7/${id}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
               key={i}
               className={styles.home__bag}
             >

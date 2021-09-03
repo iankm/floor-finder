@@ -21,7 +21,7 @@
 .header__logo {
   a {
     font-size: 24px;
-    color: white;
+    color: #ddd;
     transition: 50ms ease-in-out;
 
     &:hover {
@@ -43,7 +43,7 @@
       margin: 0px 15px;
 
       a {
-        color: #838383;
+        color: #b5b5b5;
         font-size: 18px;
 
         &:hover {
@@ -59,7 +59,7 @@
 }
 
 .header__links_active {
-  color: white !important;
+  color: #ddd !important;
 }
 
 .footer {
@@ -68,11 +68,11 @@
 
   p {
     font-size: 20px;
-    color: #838383;
+    color: #ddd;
 
     > a {
       text-decoration: underline;
-      color: #838383;
+      color: #ddd;
     }
   }
 }
