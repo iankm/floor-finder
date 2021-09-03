@@ -1,6 +1,6 @@
-# Food
+# Enchants
 
-Community-operated [website](https://www.foodproject.online/) for the Food project.
+Community-operated [website](https://www.Enchantsproject.online/) for the Enchants project.
 
 ## Contribute
 

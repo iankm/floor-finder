@@ -9,11 +9,11 @@ import type { ReactElement } from 'react';
 export default function Home(): ReactElement {
   // Quicklinks to render
   const quicklinks: Record<string, string>[] = [
-    { name: 'OpenSea', url: 'https://opensea.io/collection/foodproject' },
+    { name: 'OpenSea', url: 'https://opensea.io/collection/enchantsproject' },
     { name: 'Discord', url: 'https://discord.gg/3v2apT3YWn' },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/lootfoodproject',
+      url: 'https://twitter.com/enchantsproject',
     },
     {
       name: 'Contract',
@@ -36,7 +36,7 @@ export default function Home(): ReactElement {
       <div>
         <div className={styles.home__cta}>
           {/* CTA title */}
-          <h1>Food</h1>
+          <h1>Enchants</h1>
 
           {/* Quicklinks */}
           <ul>
@@ -53,12 +53,12 @@ export default function Home(): ReactElement {
 
           {/* CTA Description */}
           <p>
-            Food is a collection of randomized meals for adventurers generated
-            and stored on chain.
+            Enchants is a collection of randomized tables for adventurers
+            generated and stored on chain.
             <br /> Stats, images, and other functionality are intentionally
             omitted for others to interpret.
             <br />
-            Part of the Loot Metaverse.
+            Part of the Loot Project Metaverse.
           </p>
         </div>
 

@@ -35,37 +35,40 @@ function Head(): ReactElement {
   return (
     <HTMLHead>
       {/* Primary Meta Tags */}
-      <title>Food</title>
-      <meta name='title' content='Food' />
+      <title>Enchants</title>
+      <meta name='title' content='Enchants' />
       <meta
         name='description'
-        content='Food is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized meals for adventurers generated
         and stored on chain.'
       />
 
       {/* OG + Faceook */}
       <meta property='og:type' content='website' />
-      <meta property='og:url' content='https://www.foodproject.online/' />
-      <meta property='og:title' content='Food' />
+      <meta property='og:url' content='https://www.Enchantsproject.online/' />
+      <meta property='og:title' content='Enchants' />
       <meta
         property='og:description'
-        content='Food is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized meals for adventurers generated
         and stored on chain.'
       />
-      <meta property='og:image' content='https://foodproject.com/meta.png' />
+      <meta
+        property='og:image'
+        content='https://Enchantsproject.com/meta.png'
+      />
 
       {/* Twitter */}
       <meta property='twitter:card' content='summary_large_image' />
-      <meta property='twitter:url' content='https://www.foodproject.com/' />
-      <meta property='twitter:title' content='Food' />
+      <meta property='twitter:url' content='https://www.Enchantsproject.com/' />
+      <meta property='twitter:title' content='Enchants' />
       <meta
         property='twitter:description'
-        content='Food is a collection of randomized meals for adventurers generated
+        content='Enchants is a collection of randomized meals for adventurers generated
         and stored on chain.'
       />
       <meta
         property='twitter:image'
-        content='https://foodproject.com/meta.png'
+        content='https://Enchantsproject.com/meta.png'
       />
 
       {/* Font */}
@@ -102,7 +105,7 @@ function Header() {
       {/* Main logo */}
       <div className={styles.header__logo}>
         <Link href='/'>
-          <a>Food</a>
+          <a>Enchants</a>
         </Link>
       </div>
 

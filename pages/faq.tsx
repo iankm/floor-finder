@@ -15,10 +15,11 @@ export default function FAQ(): ReactElement {
 
         {/* What is loot ? */}
         <div className={styles.faq__item}>
-          <h3>What is Food?</h3>
+          <h3>What is Enchants?</h3>
           <p>
-            Food is a derivative collection of 8,000 unique meals comprised of
-            adventurer food, based on the original Loot release released by{' '}
+            Enchants is a derivative collection of 8,000 unique meals comprised
+            of adventurer Enchants, based on the original Loot release released
+            by{' '}
             <a
               href='https://twitter.com/dhof/status/1431316631934967815'
               target='_blank'
@@ -32,24 +33,24 @@ export default function FAQ(): ReactElement {
             waist, and weapon.
           </p>
           <p>
-            Food is an unaudited project. Meals #1 to #7777 were claimable by
-            anyone and #7778 to #8000 are currently reserved for the contract
+            Enchants is an unaudited project. Meals #1 to #7777 were claimable
+            by anyone and #7778 to #8000 are currently reserved for the contract
             deployer.
           </p>
         </div>
 
         {/* Why is loot special? */}
         <div className={styles.faq__item}>
-          <h3>Why is Food special?</h3>
+          <h3>Why is Enchants special?</h3>
           <p>It is not.</p>
         </div>
 
         {/* Can I build with loot? */}
         <div className={styles.faq__item}>
-          <h3>Can I build with Food?</h3>
+          <h3>Can I build with Enchants?</h3>
           <p>
-            Yes, you are free to use Food in any way you want. For inspiration,
-            see existing{' '}
+            Yes, you are free to use Enchants in any way you want. For
+            inspiration, see existing{' '}
             <Link href='/resources'>
               <a>resources</a>
             </Link>{' '}
