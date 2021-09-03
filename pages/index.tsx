@@ -9,7 +9,7 @@ import type { ReactElement } from 'react';
 export default function Home(): ReactElement {
   // Quicklinks to render
   const quicklinks: Record<string, string>[] = [
-    { name: 'OpenSea', url: 'https://opensea.io/collection/enchantsproject' },
+    { name: 'OpenSea', url: 'https://opensea.io/collection/enchants' },
     { name: 'Discord', url: 'https://discord.gg/3v2apT3YWn' },
     {
       name: 'Twitter',
