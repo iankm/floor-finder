@@ -1,5 +1,5 @@
 // Export selected default bags
-export const defaultTables = [
+export const defaultTomes = [
   {
     id: 1,
     attributes: [
