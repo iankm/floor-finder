@@ -1,4 +1,4 @@
-import { Formik, Form, Field } from 'Formik';
+import { Formik, Form, Field } from 'formik';
 import {
   Input,
   Button,
