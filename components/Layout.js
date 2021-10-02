@@ -5,14 +5,9 @@ import { default as HTMLHead } from 'next/head'; // Meta
 import styles from '@styles/components/Layout.module.scss'; // Styles
 
 // Types
-import type { ReactElement } from 'react';
 import { Box } from '@chakra-ui/react';
 
-export default function Layout({
-  children,
-}: {
-  children: ReactElement | ReactElement[];
-}) {
+export default function Layout({ children }) {
   return (
     <Box
       w='100%'
@@ -36,7 +31,7 @@ export default function Layout({
  * Meta HTML Head
  * @returns {ReactElement} HTML Head component
  */
-function Head(): ReactElement {
+function Head() {
   return (
     <HTMLHead>
       {/* Primary Meta Tags */}
@@ -150,7 +145,7 @@ function Header() {
  * Footer component
  * @returns {ReactElement} Footer
  */
-function Footer(): ReactElement {
+function Footer() {
   return (
     <div className={styles.footer}>
       <p>
