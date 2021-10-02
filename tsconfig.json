@@ -21,6 +21,6 @@
       "@components/*": ["./components/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "getFloorPrices.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/InputForm.js"],
   "exclude": ["node_modules"]
 }
