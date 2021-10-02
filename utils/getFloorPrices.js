@@ -1,11 +1,13 @@
 import axios from 'axios';
+// var axios = require('axios');
 
 const QUALIFYING_VOLUME = 150;
+const ETHERSCAN_KEY = '45VT41FXQ1SPZADC1J584NA37JC77KVHVD';
 
 async function getCurrentEthereumPrice() {
   try {
     const res = await axios.get(
-      `https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${process.env.ETHERSCAN_KEY}`
+      `https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${ETHERSCAN_KEY}`
     );
     return parseFloat(res.data.result.ethusd);
   } catch (err) {
@@ -85,5 +87,12 @@ async function getSummary(address) {
   });
   return summary;
 }
+
+// async function main() {
+//   const price = await getCurrentEthereumPrice();
+//   console.log(price);
+// }
+
+// main();
 
 export default getSummary;
