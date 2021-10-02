@@ -6,6 +6,7 @@ import styles from '@styles/components/Layout.module.scss'; // Styles
 
 // Types
 import type { ReactElement } from 'react';
+import { Box } from '@chakra-ui/react';
 
 export default function Layout({
   children,
@@ -13,7 +14,11 @@ export default function Layout({
   children: ReactElement | ReactElement[];
 }) {
   return (
-    <div>
+    <Box
+      w='100%'
+      h='100%'
+      bgGradient='linear(to-br, yellow.100 0%, blue.100 100%)'
+    >
       {/* Meta */}
       <Head />
       {/* Top header */}
@@ -23,7 +28,7 @@ export default function Layout({
       <div className={styles.content}>{children}</div>
       {/* Bottom footer */}
       <Footer />
-    </div>
+    </Box>
   );
 }
 
@@ -45,7 +50,7 @@ function Head(): ReactElement {
 
       {/* OG + Faceook */}
       <meta property='og:type' content='website' />
-      <meta property='og:url' content='https://www.Enchantsproject.online/' />
+      <meta property='og:url' content='https://floorfinder.vercel.app/' />
       <meta property='og:title' content='Enchants' />
       <meta
         property='og:description'
@@ -54,12 +59,15 @@ function Head(): ReactElement {
       />
       <meta
         property='og:image'
-        content='https://Enchantsproject.com/meta.png'
+        content='https://floorfinder.vercel.app/meta.png'
       />
 
       {/* Twitter */}
       <meta property='twitter:card' content='summary_large_image' />
-      <meta property='twitter:url' content='https://www.Enchantsproject.com/' />
+      <meta
+        property='twitter:url'
+        content='https://www.floorfinder.vercel.app/'
+      />
       <meta property='twitter:title' content='Enchants' />
       <meta
         property='twitter:description'
@@ -96,8 +104,7 @@ function Header() {
   const { pathname } = useRouter();
   // All links
   const links = [
-    { name: 'FAQ', path: '/faq' },
-    { name: 'Resources', path: '/resources' },
+    { name: 'Github', path: 'https://github.com/iankm/floor-finder' },
   ];
 
   return (
@@ -105,7 +112,9 @@ function Header() {
       {/* Main logo */}
       <div className={styles.header__logo}>
         <Link href='/'>
-          <a>Enchants</a>
+          <a target='_blank' rel='noreferrer'>
+            🧹
+          </a>
         </Link>
       </div>
 

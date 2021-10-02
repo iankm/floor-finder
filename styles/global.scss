@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Hellix';
+  src: url('../fonts/HellixTRIAL-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hellix-Medium';
+  src: url('../fonts/HellixTRIAL-Medium.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hellix-Bold';
+  src: url('../fonts/HellixTRIAL-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hellix-SemiBold';
+  src: url('../fonts/HellixTRIAL-SemiBold.otf') format('opentype');
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
@@ -5,10 +29,9 @@ body {
 
   // Color
   color: #ddd;
-  background-color: #134800;
 
   // Text
-  font-family: 'EB Garamond', serif, sans-serif;
+  font-family: 'Hellix', serif, sans-serif;
 }
 
 a {
